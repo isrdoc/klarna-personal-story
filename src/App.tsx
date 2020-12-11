@@ -3,12 +3,12 @@ import { ThemeProvider } from '@material-ui/core/styles'
 
 import theme from './styles/theme'
 
-function App(): ReactElement {
+import Header from './components/Header'
+
+export default function App(): ReactElement {
   return (
     <ThemeProvider theme={theme}>
-      <div>App</div>
+      <Header />
     </ThemeProvider>
   )
 }
-
-export default App
