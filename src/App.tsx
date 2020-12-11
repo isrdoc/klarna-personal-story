@@ -1,14 +1,18 @@
-import { ReactElement } from 'react'
+import { FC } from 'react'
 import { ThemeProvider } from '@material-ui/core/styles'
 
 import theme from './styles/theme'
 
 import Header from './components/Header'
+import PersonalStoryArticleScreen from './modules/PersonalStory/screens/Article'
 
-export default function App(): ReactElement {
+import IgorSrdocStory from './modules/PersonalStory/data/IgorSrdoc'
+
+export default function App(): FC {
   return (
     <ThemeProvider theme={theme}>
       <Header />
+      <PersonalStoryArticleScreen personalStory={IgorSrdocStory} />
     </ThemeProvider>
   )
 }
