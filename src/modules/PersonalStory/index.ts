@@ -1,7 +1,3 @@
-const PersonalStory = {
-  types: require('./types'),
-  data: require('./data'),
-  screens: require('./screens'),
-}
+import ArticleWithData from './ArticleWithData'
 
-export default PersonalStory
+export { ArticleWithData }

@@ -1,4 +1,4 @@
-import { Competency } from '../types'
+import { Competency } from './types'
 
 const Competencies: Competency[] = [
   {

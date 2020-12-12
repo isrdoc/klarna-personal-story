@@ -1,4 +1,6 @@
-import { Title } from '../types'
+import { Title } from './types'
+
+const titles = [SeniorJSEngineer]
 
 const SeniorJSEngineer: Title = {
   id: 'senior-js-engineer',
@@ -7,7 +9,8 @@ const SeniorJSEngineer: Title = {
   competency: {
     id: 'engineering',
     name: 'Engineering',
-    tagline: 'Seizing every opportunity to elevate the shopping experience for our customers.',
+    tagline:
+      'Seizing every opportunity to elevate the shopping experience for our customers.',
   },
 
   level: {
@@ -16,4 +19,4 @@ const SeniorJSEngineer: Title = {
   },
 }
 
-export default SeniorJSEngineer
+export default titles
