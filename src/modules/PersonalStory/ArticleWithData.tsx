@@ -1,4 +1,6 @@
 import React, { FC, Suspense } from 'react'
+import Loading from '../../components/Loading'
+import Error from '../../components/Error'
 
 import { useMockData } from './hooks'
 
@@ -13,28 +15,30 @@ type Props = {
 }
 
 export default function ArticleWithData({ id, useMock = false }: Props): FC {
-  let response, loading, hasError, article
+  let response, isLoading, hasError, error, article
 
   if (useMock) {
-    ;[response, loading, hasError] = useMockData({ id })
+    ;[response, isLoading, hasError] = useMockData({ id, willFail: false })
     article = response
   }
 
   if (!useMock) {
     const url = 'api/person'
     const opts = {}
-    ;[response, loading, hasError] = useFetch({ url, opts })
-    article = mapToArticle({ person: response })
+    ;[response, isLoading, hasError] = useFetch({ url, opts })
+
+    if (!hasError) article = mapToArticle({ person: response })
+    if (hasError) error = response
   }
 
   return (
     <>
-      {loading ? (
-        <div>Loading...</div>
+      {isLoading ? (
+        <Loading />
       ) : hasError ? (
-        <div>Error occured.</div>
+        <Error message={error} />
       ) : (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <LazyArticle article={article} />
         </Suspense>
       )}

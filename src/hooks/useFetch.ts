@@ -7,22 +7,23 @@ type Props = {
 
 export default function useFetch({ url, opts }: Props): Array {
   const [response, setResponse] = useState(null)
-  const [loading, setLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
   const [hasError, setHasError] = useState(false)
 
   useEffect(() => {
-    setLoading(true)
+    setIsLoading(true)
 
     fetch(url, opts)
       .then((res) => {
         setResponse(res.data)
-        setLoading(false)
+        setIsLoading(false)
       })
-      .catch(() => {
+      .catch((error) => {
         setHasError(true)
-        setLoading(false)
+        setResponse(error)
+        setIsLoading(false)
       })
   }, [url])
 
-  return [response, loading, hasError]
+  return [response, isLoading, hasError]
 }
