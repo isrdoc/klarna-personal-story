@@ -5,7 +5,8 @@ type Props = {
   personalStory: PersonalStory
 }
 
-export default function PersonalStoryArticleScreen({ personalStory }: Props): FC {
+// PersonalStory Screen
+export default function Article({ personalStory }: Props): FC {
   const { person } = personalStory
   const { firstName, lastName } = person
 
