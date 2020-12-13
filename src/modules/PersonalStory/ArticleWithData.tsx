@@ -39,7 +39,7 @@ export default function ArticleWithData({ id, useMock = false }: Props): FC {
         <Error message={error} />
       ) : (
         <Suspense fallback={<Loading />}>
-          <LazyArticle article={article} />
+          {article && <LazyArticle article={article} />}
         </Suspense>
       )}
     </>

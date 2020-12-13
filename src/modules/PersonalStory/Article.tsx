@@ -30,7 +30,7 @@ export default function Article({ article }: Props): FC {
   return (
     <article>
       <SiteWidth>
-        <p>Personal story of {person}.</p>
+        <h1>{person}.</h1>
         <p>Their title is {title}</p>
         <p>Their mission is {mission}</p>
         <p>Their myIrregularPath is {myIrregularPath}</p>
