@@ -1,9 +1,9 @@
-import { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(() => ({
   mainCss: {
-    marginTop: 100,
+    // marginTop: 100,
   },
 }))
 
@@ -11,7 +11,7 @@ type Props = {
   children: ReactNode
 }
 
-export default function Main({ children }: Props): FC {
+export default function Main({ children }: Props): JSX.Element {
   const classes = useStyles()
   const { mainCss } = classes
 

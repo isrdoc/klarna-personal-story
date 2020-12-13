@@ -1,6 +1,6 @@
 import { Level } from './types'
 
-const Levels: Level[] = [
+export const levels: Level[] = [
   {
     id: 'junior',
     name: 'Junior',
@@ -14,5 +14,3 @@ const Levels: Level[] = [
     name: 'Senior',
   },
 ]
-
-export default Levels

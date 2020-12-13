@@ -1,14 +1,19 @@
-import { Article } from '../types/Article'
-import { Person } from '../../models/Person/types/Person'
+import { Article } from './types'
+import { Person } from '../../models/Person/types'
 
-type Props = {
+export interface MapToArticleProps {
   person: Person
 }
 
-export function mapToArticle({ person }: Props): Article {
-  return {
-    id: person.id,
-    person: `${person.firstName} ${person.lastName}`,
-    ...person.story,
-  }
+export function mapToArticle({ person }: MapToArticleProps): Article {
+  const article: Article = Object.assign(
+    {},
+    {
+      id: person.id,
+      person: `${person.firstName} ${person.lastName}`,
+    },
+    person.story,
+  )
+
+  return article
 }

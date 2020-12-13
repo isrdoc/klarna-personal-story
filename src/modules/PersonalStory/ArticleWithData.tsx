@@ -1,42 +1,37 @@
-import React, { FC, Suspense } from 'react'
+import React, { Suspense, useState, useEffect } from 'react'
 import Loading from '../../components/Loading'
 import Error from '../../components/Error'
 
-import { useMockData } from './hooks'
+import { useGet as useGetPerson } from '../../models/Person/api'
 
-import useFetch from '../../hooks/useFetch'
+import { Article } from './types'
 import { mapToArticle } from './mappers'
 
 const LazyArticle = React.lazy(() => import('./Article'))
 
-type Props = {
+interface Props {
   id: string
-  useMock: boolean
 }
 
-export default function ArticleWithData({ id, useMock = false }: Props): FC {
-  let response, isLoading, hasError, error, article
+export default function ArticleWithData({ id }: Props): JSX.Element {
+  const [error, setError] = useState<Error | undefined>(undefined)
+  const [article, setArticle] = useState<Article | undefined | null>(undefined)
+  const [isLoading, setIsLoading] = useState<boolean>(false)
+  const [personError, person] = useGetPerson({ id })
 
-  if (useMock) {
-    ;[response, isLoading, hasError] = useMockData({ id, willFail: false })
-    article = response
-  }
-
-  if (!useMock) {
-    const url = 'api/person'
-    const opts = {}
-    ;[response, isLoading, hasError] = useFetch({ url, opts })
-
-    if (!hasError) article = mapToArticle({ person: response })
-    if (hasError) error = response
-  }
+  useEffect(() => {
+    setIsLoading(true)
+    if (personError) setError(personError)
+    if (person) setArticle(mapToArticle({ person }))
+    if (person || personError) setIsLoading(false)
+  }, [id, person, personError])
 
   return (
     <>
       {isLoading ? (
         <Loading />
-      ) : hasError ? (
-        <Error message={error} />
+      ) : error ? (
+        <Error message={error.message} />
       ) : (
         <Suspense fallback={<Loading />}>
           {article && <LazyArticle article={article} />}

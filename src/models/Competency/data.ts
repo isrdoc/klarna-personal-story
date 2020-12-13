@@ -1,6 +1,6 @@
 import { Competency } from './types'
 
-const Competencies: Competency[] = [
+export const competencies: Competency[] = [
   {
     id: 'engineering',
     name: 'Engineering',
@@ -14,5 +14,3 @@ const Competencies: Competency[] = [
       'Meeting the needs of our customers and surpassing expectations of shopping.',
   },
 ]
-
-export default Competencies

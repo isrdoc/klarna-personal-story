@@ -1,7 +1,5 @@
 import { Title } from './types'
 
-const titles = [SeniorJSEngineer]
-
 const SeniorJSEngineer: Title = {
   id: 'senior-js-engineer',
   name: 'Senior JS Engineer',
@@ -19,4 +17,4 @@ const SeniorJSEngineer: Title = {
   },
 }
 
-export default titles
+export const titles = [SeniorJSEngineer]

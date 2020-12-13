@@ -1,7 +1,8 @@
 import { Person, Story } from './types'
+import { findCompetency } from '../Competency/utils'
+import { findLevel } from '../Level/utils'
 
-import Competencies from '../Competency/data'
-import Levels from '../Level/data'
+import alexandreBorelMainImage from './assets/Engineering_Alexandre-Borel-hps-d.jpg.webp'
 
 const IgorSrdoc: Person = {
   id: 'igor-srdoc',
@@ -12,14 +13,9 @@ const IgorSrdoc: Person = {
     id: 'senior-js-engineer',
     name: 'Senior JS Engineer',
 
-    competency: Competencies.find(
-      (competency) => competency.id === 'engineering',
-    ),
-
-    level: Levels.find((level) => level.id === 'senior'),
+    competency: findCompetency({ id: 'engineering' }),
+    level: findLevel({ id: 'senior' }),
   },
-
-  // story: IgorSrdocStory,
 }
 
 const IgorSrdocStory: Story = {
@@ -29,15 +25,22 @@ const IgorSrdocStory: Story = {
   myIrregularPath: 'My irregular path is a curve',
   workingAtKlarna: 'Working at Klarna seems exciting',
   unreasonablePassion: 'Unreasonably passionate about making thing work',
+
   aDayInMyLife: {
     am: ['Morning 1', 'Morning 2', 'Morning 3'],
     pm: ['Afternoon 1', 'Afternoon 2', 'Afternoon 3'],
     evening: ['Evening 1', 'Evening 2', 'Evening 3'],
   },
+
   takesOnKlarna: {
     leadershipPrinciple: 'Leadership principle is Detailed Thinking',
     bestTaskOfTheDay: 'Best task of the day is...',
     myTeamDescription: 'My team is a bunch of people who know more than me',
+  },
+
+  images: {
+    main: alexandreBorelMainImage,
+    more: [],
   },
 }
 
@@ -52,14 +55,9 @@ const AlexandreBorel: Person = {
     id: 'engineering-manager',
     name: 'Engineering Manager',
 
-    competency: Competencies.find(
-      (competency) => competency.id === 'engineering',
-    ),
-
-    level: Levels.find((level) => level.id === 'manager'),
+    competency: findCompetency({ id: 'engineering' }),
+    level: findLevel({ id: 'manager' }),
   },
-
-  // story: AlexandreBorelStory,
 }
 
 const AlexandreBorelStory: Story = {
@@ -74,6 +72,7 @@ const AlexandreBorelStory: Story = {
     'With great thanks to our operating model, you really get the autonomy that lets you develop your sense of ownership, challenge, get into the details, and have a vision for your work. I regularly get the opportunity to defend our vision for In-store in front of management or try to convey to what is seen as the wider In-store strategy. This has given me a lot of opportunities to sharpen my communication skills. So there are lots of things to like at Klarna, but in the end, I’ve stayed because of the operating model.',
   unreasonablePassion:
     'Two things - the first is how to get systems to work together. From people to IT systems, I love how we can build things on top of other things and get a ‘wow it works’ feeling. Secondly, I love physical copies of video games. Nowadays everything is digital so it’s amazing to get that rare indie game that finally had a limited-run edition.',
+
   aDayInMyLife: {
     am: [
       'I usually schedule early meetings with people from my team and do 1-1s at an early start in the day.',
@@ -91,6 +90,7 @@ const AlexandreBorelStory: Story = {
       'I may end up playing one of the video games I bought. Maybe.',
     ],
   },
+
   takesOnKlarna: {
     leadershipPrinciple:
       'Customer obsession. I just love to create products that satisfy customers. Not just final customers - everyone from merchants to colleagues that sell or use our products.',
@@ -99,10 +99,13 @@ const AlexandreBorelStory: Story = {
     myTeamDescription:
       'Exigent! I love that we constantly thrive to live by the leadership principles without actually thinking about it. We are constantly trying to start small, to learn fast, to question our own ways of working, and to focus on the details.',
   },
+
+  images: {
+    main: alexandreBorelMainImage,
+    more: [],
+  },
 }
 
 AlexandreBorel.story = AlexandreBorelStory
 
-const people = [IgorSrdoc, AlexandreBorel]
-
-export { people }
+export const people = [IgorSrdoc, AlexandreBorel]

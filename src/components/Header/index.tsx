@@ -1,4 +1,5 @@
-import { FC, cloneElement } from 'react'
+import { cloneElement, ReactElement } from 'react'
+import { Window } from '../../types/Window'
 import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -17,13 +18,10 @@ const useStyles = makeStyles(() => ({
     paddingLeft: '3.125rem',
     paddingRight: '3.125rem',
   },
-  title: {
-    // flexGrow: 1,
-  },
   logo: {
     height: 17.8,
     position: 'relative',
-    top: 3,
+    top: 4,
     cursor: 'pointer',
   },
   nav: {
@@ -83,28 +81,34 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-const ScrollHandler = (props) => {
+type ScrollHandlerProps = {
+  children: ReactElement
+  window?: Window
+}
+
+const ScrollHandler = (props: ScrollHandlerProps) => {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
-    target: props.window ? window() : undefined,
+    target: props.window ? props.window() : undefined,
   })
 
   return cloneElement(props.children, {
     style: {
       backgroundColor: trigger ? 'white' : 'transparent',
       transition: trigger ? '0.1s' : '0.3s',
-      borderBottom: trigger ? '1px solid rgba(0,0,0,.1)' : 'none',
+      borderBottom: trigger
+        ? '1px solid rgba(0,0,0,.1)'
+        : '1px solid rgba(255,255,255,0)',
     },
   })
 }
 
-export default function Header(): FC {
+export default function Header(): JSX.Element {
   const classes = useStyles()
   const {
     appBar,
     toolbar,
-    title,
     logo,
     nav,
     navList,
@@ -119,7 +123,7 @@ export default function Header(): FC {
       <ScrollHandler>
         <AppBar position="fixed" color="transparent" className={appBar}>
           <Toolbar className={toolbar}>
-            <Typography variant="h6" className={title}>
+            <Typography variant="h6">
               <img className={logo} src={klarnaLogo} alt="Klarna Logo" />
             </Typography>
 

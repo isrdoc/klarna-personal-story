@@ -1,36 +1,39 @@
-import { Title } from '../../Title/types/Title'
+import { Title } from '../Title/types'
 
-export type Person = {
+export interface Person {
   id: string
   firstName: string
   lastName: string
 
-  // Embeds
-  story: ?Story
-
-  // References
-  title: ?Title
+  story?: Story
+  title?: Title
 }
 
-export type Story = {
+export interface Story {
   atKlarnaIcan: string
-  title: string
+  title: Title['name']
   mission: string
   myIrregularPath: string
   workingAtKlarna: string
   unreasonablePassion: string
   aDayInMyLife: ADayInMyLife
   takesOnKlarna: TakesOnKlarna
+  images: StoryImages
 }
 
-export type ADayInMyLife = {
+export interface ADayInMyLife {
   am: string[]
   pm: string[]
   evening: string[]
 }
 
-export type TakesOnKlarna = {
+export interface TakesOnKlarna {
   leadershipPrinciple: string
   bestTaskOfTheDay: string
   myTeamDescription: string
+}
+
+export interface StoryImages {
+  main: string
+  more: string[]
 }

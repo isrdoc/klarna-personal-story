@@ -1,11 +1,10 @@
-import { Competency } from '../../Competency/types'
-import { Level } from '../../Level/types'
+import { Competency } from '../Competency/types'
+import { Level } from '../Level/types'
 
-export type Title = {
+export interface Title {
   id: string
   name: string
 
-  // Relations
-  competency: Competency
-  level: Level
+  competency?: Competency | null
+  level?: Level | null
 }

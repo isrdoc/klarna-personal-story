@@ -1,4 +1,4 @@
-export type Level = {
+export interface Level {
   id: string
   name: string
 }

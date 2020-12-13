@@ -1,8 +1,8 @@
-import { FC, useState } from 'react'
-import Snackbar from '@material-ui/core/Snackbar'
-import MuiAlert from '@material-ui/lab/Alert'
+import { useState, SyntheticEvent } from 'react'
+import Snackbar, { SnackbarCloseReason } from '@material-ui/core/Snackbar'
+import MuiAlert, { AlertProps } from '@material-ui/lab/Alert'
 
-function Alert(props) {
+function Alert(props: AlertProps) {
   return <MuiAlert elevation={6} variant="filled" {...props} />
 }
 
@@ -12,10 +12,15 @@ type Props = {
 
 const defaultMessage = 'There was an error. Please try reloading the page'
 
-export default function Error({ message = defaultMessage }: Props): FC {
+export default function Error({
+  message = defaultMessage,
+}: Props): JSX.Element {
   const [open, setOpen] = useState(true)
 
-  const handleClose = (event, reason) => {
+  const handleClose = (
+    _event: SyntheticEvent<Element, Event>,
+    reason?: SnackbarCloseReason,
+  ): void => {
     if (reason === 'clickaway') return
 
     setOpen(false)
