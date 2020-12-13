@@ -32,6 +32,7 @@ export function useFetchGet({ id }: GetProps): GetReturn {
       })
       .then((json) => {
         setData(json)
+        setError(undefined)
         setIsLoading(false)
       })
       .catch((err: Error) => {
@@ -52,7 +53,7 @@ export function useMockGet({ id }: GetProps): GetReturn {
 
   useEffect(() => {
     const person: Person | null = findPerson({ id })
-    const mockError = new Error('Could not fetch personal story article')
+    const mockError = new Error('Could not fetch Personal Story article')
 
     setIsLoading(true)
 
@@ -63,6 +64,7 @@ export function useMockGet({ id }: GetProps): GetReturn {
     })
       .then((pers) => {
         setData(pers)
+        setError(undefined)
         setIsLoading(false)
       })
       .catch((err: Error) => {

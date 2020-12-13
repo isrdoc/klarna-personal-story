@@ -16,22 +16,21 @@ interface Props {
 export default function ArticleWithData({ id }: Props): JSX.Element {
   const [error, setError] = useState<Error | undefined>(undefined)
   const [article, setArticle] = useState<Article | undefined | null>(undefined)
-  const [isLoading, setIsLoading] = useState<boolean>(false)
-  const [personError, person] = useGetPerson({ id })
+
+  const [personError, person, isLoading] = useGetPerson({ id })
 
   useEffect(() => {
-    setIsLoading(true)
+    if (isLoading) setError(undefined)
     if (personError) setError(personError)
     if (person) setArticle(mapToArticle({ person }))
-    if (person || personError) setIsLoading(false)
-  }, [id, person, personError])
+  }, [id, isLoading, person, personError])
 
   return (
     <>
       {isLoading && <Loading />}
-      {error && <Error message={error.message} />}
+      {error && !isLoading && <Error message={error.message} />}
 
-      {!isLoading && !error && article && (
+      {article && (
         <Suspense fallback={<Loading />}>
           <LazyArticle article={article} />
         </Suspense>
