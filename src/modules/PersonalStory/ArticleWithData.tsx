@@ -28,13 +28,12 @@ export default function ArticleWithData({ id }: Props): JSX.Element {
 
   return (
     <>
-      {isLoading ? (
-        <Loading />
-      ) : error ? (
-        <Error message={error.message} />
-      ) : (
+      {isLoading && <Loading />}
+      {error && <Error message={error.message} />}
+
+      {!isLoading && !error && article && (
         <Suspense fallback={<Loading />}>
-          {article && <LazyArticle article={article} />}
+          <LazyArticle article={article} />
         </Suspense>
       )}
     </>

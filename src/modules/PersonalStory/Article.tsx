@@ -1,6 +1,6 @@
 import SiteWidth from '../../components/SiteWidth'
 
-import Hero, { Content as HeroContent } from './Hero'
+import Hero, { Content as HeroContent, Styles as HeroStyles } from './Hero'
 
 import { Article as ArticleType } from './types'
 
@@ -19,6 +19,7 @@ export default function Article({ article }: Props): JSX.Element {
     unreasonablePassion,
     aDayInMyLife,
     takesOnKlarna,
+    images,
   } = article
 
   const { am, pm, evening } = aDayInMyLife
@@ -29,14 +30,20 @@ export default function Article({ article }: Props): JSX.Element {
     myTeamDescription,
   } = takesOnKlarna
 
+  const { main } = images
+
   const heroContent: HeroContent = {
     heading: `${person}.`,
     subHeading: `At Klarna, ${atKlarnaIcan}`,
   }
 
+  const heroStyles: HeroStyles = {
+    heroCss: { backgroundImage: `url(${main})` },
+  }
+
   return (
     <article>
-      <Hero isSiteTop={true} content={heroContent} />
+      <Hero isSiteTop={true} content={heroContent} styles={heroStyles} />
 
       <SiteWidth>
         <p>Their title is {title}</p>

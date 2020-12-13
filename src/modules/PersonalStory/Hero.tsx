@@ -10,6 +10,8 @@ const useStyles = makeStyles({
     width: '100%',
     minHeight: '90vh',
     backgroundColor: '#a3b2d1',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
     ...styles?.heroCss,
   }),
   contentCss: (styles: Styles | undefined) => ({

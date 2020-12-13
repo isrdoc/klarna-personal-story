@@ -2131,8 +2131,13 @@
         "signature": "2ab72e4372e04395858d2464c5ddb97bc273cb987bfed8a0cb3690e6b6b932c6",
         "affectsGlobalScope": false
       },
+      "./src/types/window.ts": {
+        "version": "8c4033717d904e1988a2f53e67e374ea8441c494aa67fdd6e289eb4d1bd2a05a",
+        "signature": "a4f5d79178fc34ed05fd8edd11018661a5ae7b6756b297be3fa361ec1fd45eee",
+        "affectsGlobalScope": false
+      },
       "./src/components/header/index.tsx": {
-        "version": "22944507adf4cf6ae52079fb204c9f8f1042f4df93232d60017e5e6d1d5bfb23",
+        "version": "6eb8241ea2fe7db21ea1e3cc620fc5df5bed2ca40fb71e81615e90a5f79d3013",
         "signature": "a9604bbae6480a10f5dc81282b692d07bd1961f4803d2674ef6aab060e9c4bd0",
         "affectsGlobalScope": false
       },
@@ -2157,68 +2162,78 @@
         "affectsGlobalScope": false
       },
       "./src/components/error/index.tsx": {
-        "version": "5919709670c26ebde215a8a5c8163258f1ae7c4ce6f66da33d52b13573f37cc0",
+        "version": "67981fa2065fdbbbeb51e098fcd19b6813923f1423cda6914572971c00cfa32c",
         "signature": "9a7e8c4646ab803b1424910cbac141fc8db67426ad5b287b3803cd675b7b5912",
         "affectsGlobalScope": false
       },
-      "./src/modules/personalstory/types.ts": {
-        "version": "4165598a4adad57950c0c09a27c77fc4704723f7475f7fe555ac11c78a087b1b",
-        "signature": "72ac2350121f224a2cc75f7b039184c1794b0df26528d047051a2076e1df88a2",
-        "affectsGlobalScope": false
-      },
-      "./src/modules/personalstory/mappers.ts": {
-        "version": "15838bc5201bf827c27c52c889256c5c8ea5c1962fa9dfce4a94d9b47468d627",
-        "signature": "fa3917ec8b9f2113a9205f6c0796656bad26b81d66d0d07ec9374d31c2a311e4",
-        "affectsGlobalScope": false
-      },
-      "./src/models/person/types.ts": {
-        "version": "ea2484d37b96d6c9c1415408b08b654c436c502bdb2e1df0dbbe85b56352aa7c",
-        "signature": "479d051422940164874b2abc8b042b645a38d27307e54b5fc19a6d546455cc75",
-        "affectsGlobalScope": false
-      },
       "./src/models/competency/types.ts": {
-        "version": "a2d23f95d845a62cc314ce6b1be0e72f411656b3443d8d3136a167dea332d1aa",
-        "signature": "64ed4831166651d7e09f2767e1f9a2ff9cf03177c3b6d4609145948413f11305",
-        "affectsGlobalScope": false
-      },
-      "./src/models/competency/data.ts": {
-        "version": "a1ce53a86799dd3b8c78ab6daa28197f2bc346af1b9f4261d553f716f4f4cdbd",
-        "signature": "b3003fb3ff3e523cb4a959050d87622741cd24e50bc3a84668b9844cf9726ebb",
+        "version": "0dee14805750699b5ef284adb4b8c51066ee66cf9b7e4acf157f751c4306bd64",
+        "signature": "7f1744cd9d275e5f61ccf599c7aafd95bec7e90c47eb819f8d4a8e1692ed3510",
         "affectsGlobalScope": false
       },
       "./src/models/level/types.ts": {
-        "version": "5c16fb6825b51084a8fe5494fb5ed45186f694ebf47e28cde3c4136a5738ca29",
-        "signature": "4b6d6cbf1aedd6fbfeb0c42b1e880c5b1c78088edd2dec302c186c0c6c67abd0",
+        "version": "9671a42aa65c71e65f053126a7a1eed62b85d024f9b27ea249da806f9707d779",
+        "signature": "abd7da5258b06fec9d0b4cb0946cfae92211abe18fa61a0ddb63dc465981bdd1",
+        "affectsGlobalScope": false
+      },
+      "./src/models/title/types.ts": {
+        "version": "967bc3be346eb1410337200832a0fad981cfbe7a0d5e0389ef370d971775af25",
+        "signature": "bdd499abcd0e50fb8ec63d684e46e90ad93e5f7b5ddda9b1e56b8b4cb674872f",
+        "affectsGlobalScope": false
+      },
+      "./src/models/person/types.ts": {
+        "version": "05439739d5ccfae8852f192caee28f7e2a8f93eab2a759a02bf7304e350089aa",
+        "signature": "97ac609df29ff27aaadc7d4e041b20a74c71a591808423e72656a9ece57e7f7f",
+        "affectsGlobalScope": false
+      },
+      "./src/models/competency/data.ts": {
+        "version": "fde8bc51745215feab0df0b357716bf677e5b425b9a558b683b0b36e242cc3c4",
+        "signature": "d6722af2d007c620b4481c5a4d12490448496c9e76180c5713e404b5cf31b4c8",
+        "affectsGlobalScope": false
+      },
+      "./src/models/competency/utils.ts": {
+        "version": "8c1866835b2a8974e7f87dc0585f53016d56a5917cf7e71396d9c2544249c181",
+        "signature": "af3e33be1dfe7d4468516918ac809a7b39c4b89cade89fef97ceb2c6457ba91d",
         "affectsGlobalScope": false
       },
       "./src/models/level/data.ts": {
-        "version": "b36ed32ac2f4efd3b82d7aa3ecdb8c8dcc9a650a69b0f8364d3f57e9ad0d7730",
-        "signature": "4acaa7d01c9ef54435e9d201d840e7791fa6e1cce711b4429dfa3fb2d7dd2f53",
+        "version": "fafff792e4b1ac5210b037dbf1ece9ab02d749f63b1c21f78fdfc9ef9fc92966",
+        "signature": "0798b25f264a25781bc8e9ee561b99117e209036ff33e01c49ee6f619c5616ca",
+        "affectsGlobalScope": false
+      },
+      "./src/models/level/utils.ts": {
+        "version": "4abe9093e3d1cdfb8dd31a284fb53529eeb4626466abc5997c5d68ed5e6a8bef",
+        "signature": "b5121dc2bb64d7e9403cdb2856b62537f73e45d1aec23975077b371c40725ada",
         "affectsGlobalScope": false
       },
       "./src/models/person/data.ts": {
-        "version": "e8cc0a78d4abf479fc19a3cd854a086ebe38d73a857fae6bd9fcf8aca7d3d616",
-        "signature": "b571a73816a7850eebda9f5e35948beee5da7ba35532d5cec6b69ecd5dd467be",
+        "version": "cae7fbcb55101555c6501bac909e18378815f39ba0cbee4a008b3dce4a4d3fa2",
+        "signature": "b88ed96c79aaec3203426590908a57e8794450dd5025ef531cb95cd59a0ea04c",
         "affectsGlobalScope": false
       },
-      "./src/modules/personalstory/data.ts": {
-        "version": "ebd769d555b0167529e6b27d3e9f18dafcea9c98fe8cbc90b76607114e3e7c4d",
-        "signature": "35d3120b03eaed04871792eb74a1e8bf360c155edeebaf9dcdb4df35afcc4cf2",
+      "./src/models/person/utils.ts": {
+        "version": "fc037f86498fe2efa6a5483b151a1070f66a12c0b05d522acbf6538fde228eeb",
+        "signature": "7cac53f337a598f1ec6e900629807c26dfedd68cb9f2a11718a51d407e5a7a01",
         "affectsGlobalScope": false
       },
-      "./src/modules/personalstory/hooks.ts": {
-        "version": "6a2171584e6892f4da10e25b710627573202643ee0eb635c208c368b2309e66e",
-        "signature": "5f50f9e50027152d861fd4a2d51501589641b5eedaae8ef858becfd005f15d4c",
+      "./src/models/person/api.ts": {
+        "version": "ceefd0aa284b1bf55565617ce14d5eabaa476e502a32fd3d166d9763f7c15d29",
+        "signature": "c32c525da97ddd803354f73f911bd1163e9fd4df224db0c1f844c6b259793c74",
         "affectsGlobalScope": false
       },
-      "./src/hooks/usefetch.ts": {
-        "version": "45f38b727cf33fa149ea072b247fc1639b43b122778c61b4551d0ea324dd8b73",
-        "signature": "f9edddfdd1caa07ef00c3f823edbd936e26c17c5a8d3fc0ddb374b4fc6cb110b",
+      "./src/modules/personalstory/types.ts": {
+        "version": "d36da281624bb90a8253ac7219f5df59d26d55c94157815087e61b6131eb8b07",
+        "signature": "0eb8e25cc294e208575f820ed2f5964666cde5c3818baa2a256bbf1b11a1981c",
+        "affectsGlobalScope": false
+      },
+      "./src/modules/personalstory/mappers.ts": {
+        "version": "3c185f490786fd024ff2508a43c1a0cb2cc4162b0ce6ec03a241a4996283c4eb",
+        "signature": "28cde995bf691a13e18c121e835a17e3632cb7c9bf77a4d7080fd94fecadfa64",
         "affectsGlobalScope": false
       },
       "./src/components/sitewidth/index.tsx": {
-        "version": "a7b9fbc5de6a4aeef8a97be13fb38b008dd87e98e22d06284ee09ca3aea448a9",
-        "signature": "9875ee9f403d155dbcc96c844f2c53d17523f32f80d0395db738172d34e7a00d",
+        "version": "77ead88dbf94b7ce588467b32044e86f12bbe0f4d965909a839a4b435a9b81d1",
+        "signature": "3b922c538462132f370e752079c6ec8a71743a9d6ccc454bdc2af0a0ee1c25d3",
         "affectsGlobalScope": false
       },
       "./src/components/sitepaddingtop/index.tsx": {
@@ -2227,18 +2242,18 @@
         "affectsGlobalScope": false
       },
       "./src/modules/personalstory/hero.tsx": {
-        "version": "c8cdbb8c5ef8c0c92af999aa15e9deb4f49df85aaa8f5cc78cd703041f2001b5",
-        "signature": "9eb049f435532c5c46cd4d4eb58e2d051a695ae2caf7053a7bba81dd99af1cd9",
+        "version": "32a95edf95e9c95b5a5cf75c251ad60293c876cff623dc969058c474547c262e",
+        "signature": "178869163b2e436db22cf387036ff084d402d629a7b8e6603df35ee5e1877a54",
         "affectsGlobalScope": false
       },
       "./src/modules/personalstory/article.tsx": {
-        "version": "44d054b8de9cdfc3958fbdce6508ac1d250a1ef55eb6f1a1d9a274bd4ed1a9c5",
-        "signature": "4abe76c748cd6e3c80f28b877cb09c9bb516976601737266790b4e7e50c01a81",
+        "version": "d5ccc9d22e0432822b9266625dec20034db7c2c0dfbe956b8297b4f52406326f",
+        "signature": "b49d1fe682dab1c78f0ea2536c5c2fe0857cc003822c5e876fe134e6d74efd53",
         "affectsGlobalScope": false
       },
       "./src/modules/personalstory/articlewithdata.tsx": {
-        "version": "751672aada14ee202e597a759949c5bfbf62c0ed078294a71665f43448b61b9f",
-        "signature": "72ef77f1c21248360b8e17e475e9a34062b1773ceb7067ac90b20195c1691355",
+        "version": "74f0ccce7f41f2f1fa529c26f98b0a9dd92f1eec3085ad7af8e7fefc4a661788",
+        "signature": "c8b60ad072cb8a6df224e795180cde9bf40a002995fc52e9a9cb9c2ad2c51303",
         "affectsGlobalScope": false
       },
       "./src/modules/personalstory/index.ts": {
@@ -2247,7 +2262,7 @@
         "affectsGlobalScope": false
       },
       "./src/app.tsx": {
-        "version": "30041dcffdde3144e1d89863594e021c1e87c12113891f0e748b02aed93589e9",
+        "version": "6abe5eaf10c49e7c111613dbd1a81d602a5ae4fabd66c6db7b68de942888344f",
         "signature": "96f6dfee194c72c96824bb3d5f97a3344f0e6dcc5f7dc9473605d753825b2313",
         "affectsGlobalScope": false
       },
@@ -2586,14 +2601,14 @@
         "signature": "a46d66851af2c056e805fdd574bf5ec3adb1181c43c5e41f0a1c592e338afe64",
         "affectsGlobalScope": false
       },
-      "./src/models/title/types.ts": {
-        "version": "2bd0b681b411a774661ceca5f096e0f4c0eab89f499e4120a05e5b1c8a807fdb",
-        "signature": "c3de9e0a060ed54967623ada795266c347655a6307fa61fb2c8cb204a83b9e96",
+      "./src/models/title/data.ts": {
+        "version": "9376c460e76bbc87d371f34eeee0777bb8299cb55d94c13d0636342b0f2398b4",
+        "signature": "55f3721e5aff7a9edd3291dbb1439c366373be86fe786fce9cbb39603f0e283c",
         "affectsGlobalScope": false
       },
-      "./src/models/title/data.ts": {
-        "version": "3e5ab943618744f2b726f8b37a0133105abd123634e9c4ed229fa5c30fa97790",
-        "signature": "78023256cf51898900dea689f8e9dc84351ea414ea2058bb8f8932a3f6fd7f41",
+      "./src/models/title/utils.ts": {
+        "version": "a8ed6a34d839695987c1f89e6e520bfeeb4650ea1a8ffc92ab067e42bdc9179d",
+        "signature": "cef9bfd3ad53c6ae0a52f70f3bcb6a7f893763a419e88d0e64a5623db2f42120",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/anymatch/index.d.ts": {
@@ -4911,7 +4926,8 @@
         "./node_modules/@material-ui/core/typography/index.d.ts",
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/@types/react/jsx-runtime.d.ts",
-        "./node_modules/react-scripts/lib/react-app.d.ts"
+        "./node_modules/react-scripts/lib/react-app.d.ts",
+        "./src/types/window.ts"
       ],
       "./src/components/loading/index.tsx": [
         "./node_modules/@material-ui/core/linearprogress/index.d.ts",
@@ -4931,10 +4947,6 @@
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/@types/react/jsx-runtime.d.ts"
       ],
-      "./src/hooks/usefetch.ts": [
-        "./node_modules/@types/react/index.d.ts",
-        "./node_modules/@types/react/jsx-runtime.d.ts"
-      ],
       "./src/index.tsx": [
         "./node_modules/@types/react-dom/index.d.ts",
         "./node_modules/@types/react/index.d.ts",
@@ -4949,6 +4961,11 @@
       "./src/models/competency/types.ts": [
         "./node_modules/@types/react/jsx-runtime.d.ts"
       ],
+      "./src/models/competency/utils.ts": [
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./src/models/competency/data.ts",
+        "./src/models/competency/types.ts"
+      ],
       "./src/models/level/data.ts": [
         "./node_modules/@types/react/jsx-runtime.d.ts",
         "./src/models/level/types.ts"
@@ -4956,41 +4973,60 @@
       "./src/models/level/types.ts": [
         "./node_modules/@types/react/jsx-runtime.d.ts"
       ],
+      "./src/models/level/utils.ts": [
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./src/models/level/data.ts",
+        "./src/models/level/types.ts"
+      ],
+      "./src/models/person/api.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./src/models/person/types.ts",
+        "./src/models/person/utils.ts"
+      ],
       "./src/models/person/data.ts": [
         "./node_modules/@types/react/jsx-runtime.d.ts",
         "./node_modules/react-scripts/lib/react-app.d.ts",
-        "./src/models/competency/data.ts",
-        "./src/models/level/data.ts",
+        "./src/models/competency/utils.ts",
+        "./src/models/level/utils.ts",
         "./src/models/person/types.ts"
       ],
       "./src/models/person/types.ts": [
-        "./node_modules/@types/react/jsx-runtime.d.ts"
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./src/models/title/types.ts"
+      ],
+      "./src/models/person/utils.ts": [
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./src/models/person/data.ts",
+        "./src/models/person/types.ts"
       ],
       "./src/models/title/data.ts": [
         "./node_modules/@types/react/jsx-runtime.d.ts",
         "./src/models/title/types.ts"
       ],
       "./src/models/title/types.ts": [
-        "./node_modules/@types/react/jsx-runtime.d.ts"
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./src/models/competency/types.ts",
+        "./src/models/level/types.ts"
+      ],
+      "./src/models/title/utils.ts": [
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./src/models/title/data.ts",
+        "./src/models/title/types.ts"
       ],
       "./src/modules/personalstory/article.tsx": [
         "./node_modules/@types/react/jsx-runtime.d.ts",
         "./src/components/sitewidth/index.tsx",
-        "./src/modules/personalstory/hero.tsx"
+        "./src/modules/personalstory/hero.tsx",
+        "./src/modules/personalstory/types.ts"
       ],
       "./src/modules/personalstory/articlewithdata.tsx": [
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/@types/react/jsx-runtime.d.ts",
         "./src/components/error/index.tsx",
         "./src/components/loading/index.tsx",
-        "./src/hooks/usefetch.ts",
+        "./src/models/person/api.ts",
         "./src/modules/personalstory/article.tsx",
-        "./src/modules/personalstory/hooks.ts",
-        "./src/modules/personalstory/mappers.ts"
-      ],
-      "./src/modules/personalstory/data.ts": [
-        "./node_modules/@types/react/jsx-runtime.d.ts",
-        "./src/models/person/data.ts",
         "./src/modules/personalstory/mappers.ts",
         "./src/modules/personalstory/types.ts"
       ],
@@ -5001,20 +5037,18 @@
         "./src/components/sitepaddingtop/index.tsx",
         "./src/components/sitewidth/index.tsx"
       ],
-      "./src/modules/personalstory/hooks.ts": [
-        "./node_modules/@types/react/index.d.ts",
-        "./node_modules/@types/react/jsx-runtime.d.ts",
-        "./src/modules/personalstory/data.ts"
-      ],
       "./src/modules/personalstory/index.ts": [
         "./node_modules/@types/react/jsx-runtime.d.ts",
         "./src/modules/personalstory/articlewithdata.tsx"
       ],
       "./src/modules/personalstory/mappers.ts": [
-        "./node_modules/@types/react/jsx-runtime.d.ts"
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./src/models/person/types.ts",
+        "./src/modules/personalstory/types.ts"
       ],
       "./src/modules/personalstory/types.ts": [
-        "./node_modules/@types/react/jsx-runtime.d.ts"
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./src/models/person/types.ts"
       ],
       "./src/react-app-env.d.ts": [
         "./node_modules/react-scripts/lib/react-app.d.ts"
@@ -5028,6 +5062,9 @@
       ],
       "./src/styles/theme.ts": [
         "./node_modules/@material-ui/core/index.d.ts",
+        "./node_modules/@types/react/jsx-runtime.d.ts"
+      ],
+      "./src/types/window.ts": [
         "./node_modules/@types/react/jsx-runtime.d.ts"
       ]
     },
@@ -7045,16 +7082,38 @@
       "./src/models/competency/data.ts": [
         "./src/models/competency/types.ts"
       ],
+      "./src/models/competency/utils.ts": [
+        "./src/models/competency/types.ts"
+      ],
       "./src/models/level/data.ts": [
         "./src/models/level/types.ts"
       ],
+      "./src/models/level/utils.ts": [
+        "./src/models/level/types.ts"
+      ],
+      "./src/models/person/api.ts": [
+        "./src/models/person/types.ts"
+      ],
       "./src/models/person/data.ts": [
+        "./src/models/person/types.ts"
+      ],
+      "./src/models/person/types.ts": [
+        "./src/models/title/types.ts"
+      ],
+      "./src/models/person/utils.ts": [
         "./src/models/person/types.ts"
       ],
       "./src/models/title/data.ts": [
         "./src/models/title/types.ts"
       ],
-      "./src/modules/personalstory/data.ts": [
+      "./src/models/title/types.ts": [
+        "./src/models/competency/types.ts",
+        "./src/models/level/types.ts"
+      ],
+      "./src/models/title/utils.ts": [
+        "./src/models/title/types.ts"
+      ],
+      "./src/modules/personalstory/article.tsx": [
         "./src/modules/personalstory/types.ts"
       ],
       "./src/modules/personalstory/hero.tsx": [
@@ -7062,6 +7121,13 @@
       ],
       "./src/modules/personalstory/index.ts": [
         "./src/modules/personalstory/articlewithdata.tsx"
+      ],
+      "./src/modules/personalstory/mappers.ts": [
+        "./src/models/person/types.ts",
+        "./src/modules/personalstory/types.ts"
+      ],
+      "./src/modules/personalstory/types.ts": [
+        "./src/models/person/types.ts"
       ],
       "./src/react-app-env.d.ts": [
         "./node_modules/react-scripts/lib/react-app.d.ts"
@@ -7615,170 +7681,43 @@
       "./node_modules/web-vitals/dist/types.d.ts",
       "./src/app.test.tsx",
       "./src/app.tsx",
-      [
-        "./src/components/error/index.tsx",
-        [
-          {
-            "file": "./src/components/error/index.tsx",
-            "start": 145,
-            "length": 5,
-            "messageText": "Parameter 'props' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/components/error/index.tsx",
-            "start": 484,
-            "length": 5,
-            "messageText": "'event' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "./src/components/error/index.tsx",
-            "start": 484,
-            "length": 5,
-            "messageText": "Parameter 'event' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/components/error/index.tsx",
-            "start": 491,
-            "length": 6,
-            "messageText": "Parameter 'reason' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          }
-        ]
-      ],
-      [
-        "./src/components/header/index.tsx",
-        [
-          {
-            "file": "./src/components/header/index.tsx",
-            "start": 1733,
-            "length": 5,
-            "messageText": "Parameter 'props' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/components/header/index.tsx",
-            "start": 1856,
-            "length": 6,
-            "code": 2349,
-            "category": 1,
-            "messageText": {
-              "messageText": "This expression is not callable.",
-              "category": 1,
-              "code": 2349,
-              "next": [
-                {
-                  "messageText": "Type 'Window & typeof globalThis' has no call signatures.",
-                  "category": 1,
-                  "code": 2757
-                }
-              ]
-            }
-          }
-        ]
-      ],
+      "./src/components/error/index.tsx",
+      "./src/components/header/index.tsx",
       "./src/components/loading/index.tsx",
       "./src/components/main/index.tsx",
       "./src/components/sitepaddingtop/index.tsx",
-      [
-        "./src/components/sitewidth/index.tsx",
-        [
-          {
-            "file": "./src/components/sitewidth/index.tsx",
-            "start": 330,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'siteWidth' does not exist on type '{}'."
-          }
-        ]
-      ],
-      [
-        "./src/hooks/usefetch.ts",
-        [
-          {
-            "file": "./src/hooks/usefetch.ts",
-            "start": 153,
-            "length": 5,
-            "messageText": "Generic type 'Array<T>' requires 1 type argument(s).",
-            "category": 1,
-            "code": 2314
-          },
-          {
-            "file": "./src/hooks/usefetch.ts",
-            "start": 425,
-            "length": 4,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'data' does not exist on type 'Response'."
-          }
-        ]
-      ],
+      "./src/components/sitewidth/index.tsx",
       "./src/index.tsx",
       "./src/models/competency/data.ts",
       "./src/models/competency/types.ts",
+      "./src/models/competency/utils.ts",
       "./src/models/level/data.ts",
       "./src/models/level/types.ts",
+      "./src/models/level/utils.ts",
+      "./src/models/person/api.ts",
+      "./src/models/person/data.ts",
+      "./src/models/person/types.ts",
+      "./src/models/person/utils.ts",
+      "./src/models/title/data.ts",
+      "./src/models/title/types.ts",
+      "./src/models/title/utils.ts",
+      "./src/modules/personalstory/article.tsx",
       [
-        "./src/models/person/data.ts",
+        "./src/modules/personalstory/articlewithdata.tsx",
         [
           {
-            "file": "./src/models/person/data.ts",
-            "start": 129,
-            "length": 9,
+            "file": "./src/modules/personalstory/articlewithdata.tsx",
+            "start": 1142,
+            "length": 11,
             "code": 2741,
             "category": 1,
-            "messageText": "Property 'story' is missing in type '{ id: string; firstName: string; lastName: string; title: { id: string; name: string; competency: Competency | undefined; level: Level | undefined; }; }' but required in type 'Person'.",
+            "messageText": "Property 'wrong' is missing in type '{ article: Article; }' but required in type 'Props'.",
             "relatedInformation": [
               {
-                "file": "./src/models/person/types.ts",
-                "start": 139,
+                "file": "./src/modules/personalstory/article.tsx",
+                "start": 200,
                 "length": 5,
-                "messageText": "'story' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "./src/models/person/data.ts",
-            "start": 487,
-            "length": 14,
-            "code": 2741,
-            "category": 1,
-            "messageText": "Property 'images' is missing in type '{ atKlarnaIcan: string; title: string; mission: string; myIrregularPath: string; workingAtKlarna: string; unreasonablePassion: string; aDayInMyLife: { am: string[]; pm: string[]; evening: string[]; }; takesOnKlarna: { ...; }; }' but required in type 'Story'.",
-            "relatedInformation": [
-              {
-                "file": "./src/models/person/types.ts",
-                "start": 416,
-                "length": 6,
-                "messageText": "'images' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "./src/models/person/data.ts",
-            "start": 1308,
-            "length": 14,
-            "code": 2741,
-            "category": 1,
-            "messageText": "Property 'story' is missing in type '{ id: string; firstName: string; lastName: string; title: { id: string; name: string; competency: Competency | undefined; level: Level | undefined; }; }' but required in type 'Person'.",
-            "relatedInformation": [
-              {
-                "file": "./src/models/person/types.ts",
-                "start": 139,
-                "length": 5,
-                "messageText": "'story' is declared here.",
+                "messageText": "'wrong' is declared here.",
                 "category": 3,
                 "code": 2728
               }
@@ -7786,265 +7725,15 @@
           }
         ]
       ],
-      [
-        "./src/models/person/types.ts",
-        [
-          {
-            "file": "./src/models/person/types.ts",
-            "start": 22,
-            "length": 25,
-            "messageText": "Cannot find module '../../Title/types/Title' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "./src/models/person/types.ts",
-            "start": 146,
-            "length": 6,
-            "messageText": "JSDoc types can only be used inside documentation comments.",
-            "category": 1,
-            "code": 8020
-          },
-          {
-            "file": "./src/models/person/types.ts",
-            "start": 179,
-            "length": 6,
-            "messageText": "JSDoc types can only be used inside documentation comments.",
-            "category": 1,
-            "code": 8020
-          }
-        ]
-      ],
-      [
-        "./src/models/title/data.ts",
-        [
-          {
-            "file": "./src/models/title/data.ts",
-            "start": 49,
-            "length": 16,
-            "messageText": "Block-scoped variable 'SeniorJSEngineer' used before its declaration.",
-            "category": 1,
-            "code": 2448,
-            "relatedInformation": [
-              {
-                "file": "./src/models/title/data.ts",
-                "start": 74,
-                "length": 16,
-                "messageText": "'SeniorJSEngineer' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "./src/models/title/data.ts",
-            "start": 49,
-            "length": 16,
-            "messageText": "Variable 'SeniorJSEngineer' is used before being assigned.",
-            "category": 1,
-            "code": 2454
-          }
-        ]
-      ],
-      [
-        "./src/models/title/types.ts",
-        [
-          {
-            "file": "./src/models/title/types.ts",
-            "start": 27,
-            "length": 24,
-            "messageText": "Cannot find module '../../Competency/types' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "./src/models/title/types.ts",
-            "start": 74,
-            "length": 19,
-            "messageText": "Cannot find module '../../Level/types' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          }
-        ]
-      ],
-      [
-        "./src/modules/personalstory/article.tsx",
-        [
-          {
-            "file": "./src/modules/personalstory/article.tsx",
-            "start": 146,
-            "length": 18,
-            "messageText": "Cannot find module '../types/Article' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "./src/modules/personalstory/article.tsx",
-            "start": 749,
-            "length": 4,
-            "code": 2739,
-            "category": 1,
-            "messageText": "Type '{ isSiteTop: true; content: Content; }' is missing the following properties from type 'Props': children, styles"
-          },
-          {
-            "file": "./src/modules/personalstory/article.tsx",
-            "start": 804,
-            "length": 9,
-            "code": 2741,
-            "category": 1,
-            "messageText": "Property 'styles' is missing in type '{ children: any[]; }' but required in type 'Props'.",
-            "relatedInformation": [
-              {
-                "file": "./src/components/sitewidth/index.tsx",
-                "start": 390,
-                "length": 6,
-                "messageText": "'styles' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "./src/modules/personalstory/article.tsx",
-            "start": 1095,
-            "length": 5,
-            "messageText": "Parameter 'entry' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/modules/personalstory/article.tsx",
-            "start": 1102,
-            "length": 5,
-            "messageText": "Parameter 'index' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/modules/personalstory/article.tsx",
-            "start": 1191,
-            "length": 5,
-            "messageText": "Parameter 'entry' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/modules/personalstory/article.tsx",
-            "start": 1198,
-            "length": 5,
-            "messageText": "Parameter 'index' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/modules/personalstory/article.tsx",
-            "start": 1292,
-            "length": 5,
-            "messageText": "Parameter 'entry' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/modules/personalstory/article.tsx",
-            "start": 1299,
-            "length": 5,
-            "messageText": "Parameter 'index' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          }
-        ]
-      ],
-      "./src/modules/personalstory/articlewithdata.tsx",
-      "./src/modules/personalstory/data.ts",
-      [
-        "./src/modules/personalstory/hero.tsx",
-        [
-          {
-            "file": "./src/modules/personalstory/hero.tsx",
-            "start": 368,
-            "length": 4,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'hero' does not exist on type '{}'."
-          },
-          {
-            "file": "./src/modules/personalstory/hero.tsx",
-            "start": 594,
-            "length": 7,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'content' does not exist on type '{}'."
-          },
-          {
-            "file": "./src/modules/personalstory/hero.tsx",
-            "start": 767,
-            "length": 10,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'headingCss' does not exist on type '{}'."
-          },
-          {
-            "file": "./src/modules/personalstory/hero.tsx",
-            "start": 925,
-            "length": 13,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'subHeadingCss' does not exist on type '{}'."
-          }
-        ]
-      ],
-      [
-        "./src/modules/personalstory/hooks.ts",
-        [
-          {
-            "file": "./src/modules/personalstory/hooks.ts",
-            "start": 189,
-            "length": 5,
-            "messageText": "Generic type 'Array<T>' requires 1 type argument(s).",
-            "category": 1,
-            "code": 2314
-          }
-        ]
-      ],
+      "./src/modules/personalstory/hero.tsx",
       "./src/modules/personalstory/index.ts",
-      [
-        "./src/modules/personalstory/mappers.ts",
-        [
-          {
-            "file": "./src/modules/personalstory/mappers.ts",
-            "start": 24,
-            "length": 18,
-            "messageText": "Cannot find module '../types/Article' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "./src/modules/personalstory/mappers.ts",
-            "start": 66,
-            "length": 34,
-            "messageText": "Cannot find module '../../models/Person/types/Person' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          }
-        ]
-      ],
-      [
-        "./src/modules/personalstory/types.ts",
-        [
-          {
-            "file": "./src/modules/personalstory/types.ts",
-            "start": 30,
-            "length": 30,
-            "messageText": "An import path cannot end with a '.ts' extension. Consider importing '../../models/Person/types' instead.",
-            "category": 1,
-            "code": 2691
-          }
-        ]
-      ],
+      "./src/modules/personalstory/mappers.ts",
+      "./src/modules/personalstory/types.ts",
       "./src/react-app-env.d.ts",
       "./src/reportwebvitals.ts",
       "./src/setuptests.ts",
-      "./src/styles/theme.ts"
+      "./src/styles/theme.ts",
+      "./src/types/window.ts"
     ],
     "affectedFilesPendingEmit": [
       [
@@ -10104,11 +9793,23 @@
         1
       ],
       [
+        "./src/models/competency/utils.ts",
+        1
+      ],
+      [
         "./src/models/level/data.ts",
         1
       ],
       [
         "./src/models/level/types.ts",
+        1
+      ],
+      [
+        "./src/models/level/utils.ts",
+        1
+      ],
+      [
+        "./src/models/person/api.ts",
         1
       ],
       [
@@ -10120,11 +9821,19 @@
         1
       ],
       [
+        "./src/models/person/utils.ts",
+        1
+      ],
+      [
         "./src/models/title/data.ts",
         1
       ],
       [
         "./src/models/title/types.ts",
+        1
+      ],
+      [
+        "./src/models/title/utils.ts",
         1
       ],
       [
@@ -10177,6 +9886,10 @@
       ],
       [
         "./src/styles/theme.ts",
+        1
+      ],
+      [
+        "./src/types/window.ts",
         1
       ]
     ]
