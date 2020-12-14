@@ -14,8 +14,8 @@ export default function App(): JSX.Element {
       <Header />
 
       <Main>
-        {/* <Article id="igor-srdoc" /> */}
-        <Article id="alexandre-borel" />
+        <Article id="igor-srdoc" />
+        {/* <Article id="alexandre-borel" /> */}
       </Main>
     </ThemeProvider>
   )

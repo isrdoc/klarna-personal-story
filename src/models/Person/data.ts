@@ -6,9 +6,16 @@ import { findLevel } from '../Level/utils'
 // import alexandreBorelMoreImage1 from './assets/Engineering_Alexandre-Borel-psc-m.jpg.webp'
 // import alexandreBorelMoreImage2 from './assets/Engineering_Alexandre-Borel-ps-m.jpg.webp'
 
+const igorSrdocMainImage =
+  'https://lh3.googleusercontent.com/u/0/d/17Z5Y7VQGCuOuzrgN8Ky9iTRytM1fU7gl=w2614-h1594-iv1'
+
+const igorSrdocMainMoreImage1 =
+  'https://lh3.googleusercontent.com/u/0/d/1tsNWYIFTKUwG7R6ZWtyOX88aKzUREgd6=w2614-h1594-iv1'
+const igorSrdocMainMoreImage2 =
+  'https://lh3.googleusercontent.com/u/0/d/1tsNWYIFTKUwG7R6ZWtyOX88aKzUREgd6=w2614-h1594-iv1'
+
 const alexandreBorelMainImage =
   'https://lh3.googleusercontent.com/u/0/d/1T4_zfUSg8TbYQKREtrw1qxbJEGo_bAZq=w2614-h1594-iv1'
-
 const alexandreBorelMoreImage1 =
   'https://lh3.googleusercontent.com/u/0/d/14LYpziLkoJ5Z95wdr7p5aEnJKNm9kU67=w2614-h1594-iv1'
 const alexandreBorelMoreImage2 =
@@ -17,7 +24,7 @@ const alexandreBorelMoreImage2 =
 const IgorSrdoc: Person = {
   id: 'igor-srdoc',
   firstName: 'Igor',
-  lastName: 'Srdoč',
+  lastName: 'Srdoc',
 
   title: {
     id: 'senior-js-engineer',
@@ -29,13 +36,16 @@ const IgorSrdoc: Person = {
 }
 
 const IgorSrdocStory: Story = {
-  atKlarnaIcan: 'I can do things',
+  atKlarnaIcan:
+    'I can create and deliver solutions that users are simply excited about.',
   title: 'Senior JS Engineer',
-  mission: 'My mission',
-  myIrregularPath: 'My irregular path is a curve',
-  workingAtKlarna: 'Working at Klarna seems exciting',
-  unreasonablePassion:
-    'Unreasonably passionate about a good story. In code "story" is architecture. Among people, it is teamwork.',
+  mission:
+    'I use customer insight to create smooth interfaces that make even the most complicated journeys look simple and doable.',
+  myIrregularPath:
+    'Started via freelance web development with Content Management Systems like Joomla and Wordpress. Found that coding with JavaScript enables more creativity and control for me. Was also teaching in academia, live/online tutorials - which still do - and mentoring programmers. For the last 4 years my drive to solve problems pulled me towards team-leading and product-owning roles. My last role before (hopefully!) starting at Klarna was of a Product Manager where I juggled between business requirements, UX & UI, R&D, IT, marketing and project execution.',
+  workingAtKlarna:
+    "(I hope that) working at Klarna for me looks like this: My weeks are packed with fast and focused learning through specific project execution. With every day I have a new chance to actively participate in two fields: project planning and execution. With our great team we try hard to understand how our users think and feel - and then which solutions fit best our business model to deliver them the value they require. The second part is as much as exciting: architecting and developing the solution from start to its earliest possible launch. It's so rewarding to put the pieces (and people) together and make it work!",
+  unreasonablePassion: `I'm unreasonably passionate about telling a good story. In code "story" is its architecture. In business, it's products (not the thing on the shelf, but the solution it brings). Among people, it is teamwork.`,
 
   aDayInMyLife: {
     am: ['Morning 1', 'Morning 2', 'Morning 3'],
@@ -44,14 +54,15 @@ const IgorSrdocStory: Story = {
   },
 
   takesOnKlarna: {
-    leadershipPrinciple: 'Leadership principle is Detailed Thinking',
+    leadershipPrinciple:
+      'Customer obsession is an obvious choice - I love to build things for real people. But the one that describes me the best is: Detailed thinkers. Because ambition and desire for knowledge puts me in a high-energy state that enables me to live up to all other Leadership Principles.',
     bestTaskOfTheDay: 'Best task of the day is...',
     myTeamDescription: 'My team is a bunch of people who know more than me',
   },
 
   images: {
-    main: alexandreBorelMainImage,
-    more: [alexandreBorelMoreImage1, alexandreBorelMoreImage2],
+    main: igorSrdocMainImage,
+    more: [igorSrdocMainMoreImage1, igorSrdocMainMoreImage2],
   },
 }
 
