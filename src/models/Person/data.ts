@@ -3,6 +3,8 @@ import { findCompetency } from '../Competency/utils'
 import { findLevel } from '../Level/utils'
 
 import alexandreBorelMainImage from './assets/Engineering_Alexandre-Borel-hps-d.jpg.webp'
+import alexandreBorelMoreImage1 from './assets/Engineering_Alexandre-Borel-psc-m.jpg.webp'
+import alexandreBorelMoreImage2 from './assets/Engineering_Alexandre-Borel-ps-m.jpg.webp'
 
 const IgorSrdoc: Person = {
   id: 'igor-srdoc',
@@ -24,7 +26,8 @@ const IgorSrdocStory: Story = {
   mission: 'My mission',
   myIrregularPath: 'My irregular path is a curve',
   workingAtKlarna: 'Working at Klarna seems exciting',
-  unreasonablePassion: 'Unreasonably passionate about making thing work',
+  unreasonablePassion:
+    'Unreasonably passionate about a good story. In code "story" is architecture. Among people, it is teamwork.',
 
   aDayInMyLife: {
     am: ['Morning 1', 'Morning 2', 'Morning 3'],
@@ -40,7 +43,7 @@ const IgorSrdocStory: Story = {
 
   images: {
     main: alexandreBorelMainImage,
-    more: [],
+    more: [alexandreBorelMoreImage1, alexandreBorelMoreImage2],
   },
 }
 
@@ -102,7 +105,7 @@ const AlexandreBorelStory: Story = {
 
   images: {
     main: alexandreBorelMainImage,
-    more: [],
+    more: [alexandreBorelMoreImage1, alexandreBorelMoreImage2],
   },
 }
 

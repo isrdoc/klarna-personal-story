@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import reportWebVitals from './reportWebVitals'
 
 import 'fontsource-lato'
+import 'fontsource-lato/700-normal.css'
 import 'fontsource-lato/900-normal.css'
 import './index.css'
 

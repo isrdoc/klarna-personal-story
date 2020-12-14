@@ -8,8 +8,8 @@ const useStyles = makeStyles({
   containerCss: (styles: Styles | undefined) => ({
     display: 'flex',
     width: '100%',
-    minHeight: '90vh',
-    backgroundColor: '#a3b2d1',
+    minHeight: 100,
+    backgroundColor: '#fff',
     backgroundPosition: 'center',
     backgroundSize: 'contain',
     ...styles?.containerCss,
@@ -17,29 +17,22 @@ const useStyles = makeStyles({
   contentCss: (styles: Styles | undefined) => ({
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
     width: '100%',
     flexGrow: 1,
     paddingTop: '1.5rem',
     paddingBottom: '4.5rem',
+    fontSize: 16,
+    lineHeight: '25px',
     ...styles?.contentCss,
   }),
   headingCss: (styles: Styles | undefined) => ({
-    width: '75%',
-    fontSize: 60,
-    lineHeight: '70px',
-    fontWeight: 900,
+    width: '100%',
+    fontSize: 32,
+    lineHeight: '40px',
+    fontWeight: 700,
     margin: 0,
-    marginTop: 40,
+    marginTop: 20,
     ...styles?.headingCss,
-  }),
-  subHeadingCss: (styles: Styles | undefined) => ({
-    width: '50%',
-    fontSize: 20,
-    lineHeight: '28px',
-    margin: 0,
-    marginTop: 15,
-    ...styles?.subHeadingCss,
   }),
 })
 
@@ -54,15 +47,13 @@ export interface Styles {
   containerCss?: Record<string, unknown>
   contentCss?: Record<string, unknown>
   headingCss?: Record<string, unknown>
-  subHeadingCss?: Record<string, unknown>
 }
 
 export interface Content {
   heading?: ReactNode
-  subHeading?: ReactNode
 }
 
-export default function Hero({
+export default function Section({
   isSiteTop = false,
   children,
   styles,
@@ -70,8 +61,8 @@ export default function Hero({
 }: Props): JSX.Element {
   const classes = useStyles(styles)
 
-  const { containerCss, contentCss, headingCss, subHeadingCss } = classes
-  const { heading, subHeading } = content
+  const { containerCss, contentCss, headingCss } = classes
+  const { heading } = content
 
   return (
     <div className={containerCss}>
@@ -79,8 +70,7 @@ export default function Hero({
 
       <SiteWidth styles={{ siteWidthCss: { flexGrow: 1 } }}>
         <div className={contentCss}>
-          {heading && <h1 className={headingCss}>{heading}</h1>}
-          {subHeading && <p className={subHeadingCss}>{subHeading}</p>}
+          {heading && <h2 className={headingCss}>{heading}</h2>}
           {children}
         </div>
       </SiteWidth>
