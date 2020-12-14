@@ -2,9 +2,17 @@ import { Person, Story } from './types'
 import { findCompetency } from '../Competency/utils'
 import { findLevel } from '../Level/utils'
 
-import alexandreBorelMainImage from './assets/Engineering_Alexandre-Borel-hps-d.jpg.webp'
-import alexandreBorelMoreImage1 from './assets/Engineering_Alexandre-Borel-psc-m.jpg.webp'
-import alexandreBorelMoreImage2 from './assets/Engineering_Alexandre-Borel-ps-m.jpg.webp'
+// import alexandreBorelMainImage from './assets/Engineering_Alexandre-Borel-hps-d.jpg.webp'
+// import alexandreBorelMoreImage1 from './assets/Engineering_Alexandre-Borel-psc-m.jpg.webp'
+// import alexandreBorelMoreImage2 from './assets/Engineering_Alexandre-Borel-ps-m.jpg.webp'
+
+const alexandreBorelMainImage =
+  'https://lh3.googleusercontent.com/u/0/d/1T4_zfUSg8TbYQKREtrw1qxbJEGo_bAZq=w2614-h1594-iv1'
+
+const alexandreBorelMoreImage1 =
+  'https://lh3.googleusercontent.com/u/0/d/14LYpziLkoJ5Z95wdr7p5aEnJKNm9kU67=w2614-h1594-iv1'
+const alexandreBorelMoreImage2 =
+  'https://lh3.googleusercontent.com/u/0/d/13hBlCIA17rAzOzM7fE0yfVhIg1ys02-I=w2614-h1594-iv1'
 
 const IgorSrdoc: Person = {
   id: 'igor-srdoc',
