@@ -2,6 +2,7 @@
   "name": "klarna-personal-story",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://main.dd3qeqxbxkuv6.amplifyapp.com",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",

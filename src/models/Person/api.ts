@@ -6,7 +6,7 @@ import { findPerson } from './utils'
 const getConfig = {
   url: 'api/person',
   useMock: true,
-  timeout: 2000,
+  timeout: 1000,
   willResolve: true,
 }
 
