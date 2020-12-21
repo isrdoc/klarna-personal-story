@@ -10,6 +10,7 @@ export interface Person {
 }
 
 export interface Story {
+  id: string
   atKlarnaIcan: string
   title: Title['name']
   mission: string

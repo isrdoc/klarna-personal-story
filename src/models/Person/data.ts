@@ -36,6 +36,7 @@ const IgorSrdoc: Person = {
 }
 
 const IgorSrdocStory: Story = {
+  id: 'igor-srdoc-story',
   atKlarnaIcan:
     'I can create and deliver solutions that users are simply excited about.',
   title: 'Senior JS Engineer',
@@ -83,6 +84,7 @@ const AlexandreBorel: Person = {
 }
 
 const AlexandreBorelStory: Story = {
+  id: 'alexandre-borel-story',
   atKlarnaIcan:
     'I have the autonomy to challenge and create a vision for my product.',
   title: 'Engineering Manager',

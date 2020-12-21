@@ -1,9 +1,5 @@
-import { Person, Story } from '../../models/Person/types'
+import { Story } from '../../models/Person/types'
 
-interface FromPerson {
-  id: Person['id']
-}
-
-export interface Article extends FromPerson, Story {
+export interface Article extends Story {
   person: string
 }
