@@ -1,6 +1,7 @@
 import { Person, Story } from './types'
 import { findCompetency } from '../Competency/utils'
 import { findLevel } from '../Level/utils'
+import { findImpact } from '../Impact/utils'
 
 // import alexandreBorelMainImage from './assets/Engineering_Alexandre-Borel-hps-d.jpg.webp'
 // import alexandreBorelMoreImage1 from './assets/Engineering_Alexandre-Borel-psc-m.jpg.webp'
@@ -32,6 +33,7 @@ const IgorSrdoc: Person = {
 
     competency: findCompetency({ id: 'engineering' }),
     level: findLevel({ id: 'senior' }),
+    impact: findImpact({ id: 'associate' }),
   },
 }
 
@@ -79,7 +81,8 @@ const AlexandreBorel: Person = {
     name: 'Engineering Manager',
 
     competency: findCompetency({ id: 'engineering' }),
-    level: findLevel({ id: 'manager' }),
+    level: findLevel({ id: 'senior' }),
+    impact: findImpact({ id: 'manager' }),
   },
 }
 

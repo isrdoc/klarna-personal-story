@@ -15,6 +15,11 @@ const SeniorJSEngineer: Title = {
     id: 'senior',
     name: 'Senior',
   },
+
+  impact: {
+    id: 'associate',
+    name: 'Associate',
+  },
 }
 
 export const titles = [SeniorJSEngineer]
