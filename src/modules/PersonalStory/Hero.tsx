@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     backgroundColor: '#a3b2d1',
     backgroundPosition: 'center',
     backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
     ...styles?.containerCss,
   }),
   contentCss: (styles: Styles | undefined) => ({
